@@ -1,0 +1,137 @@
+[
+    {
+        "cidade": "ARACAJU",
+        "latitude": "-10.9111",
+        "longitude": "-37.0717"
+    },
+    {
+        "cidade": "BELEM",
+        "latitude": "-1.4558",
+        "longitude": "-48.5039"
+    },
+    {
+        "cidade": "BELO HORIZONTE",
+        "latitude": "-19.9281",
+        "longitude": "-43.9419"
+    },
+    {
+        "cidade": "BOA VISTA",
+        "latitude": "2.8197",
+        "longitude": "-60.6733"
+    },
+    {
+        "cidade": "BRASILIA",
+        "latitude": "-15.7939",
+        "longitude": "-47.8828"
+    },
+    {
+        "cidade": "CAMPO GRANDE",
+        "latitude": "-20.4686",
+        "longitude": "-54.6222"
+    },
+    {
+        "cidade": "CUIABA",
+        "latitude": "-15.5958",
+        "longitude": "-56.0969"
+    },
+    {
+        "cidade": "CURITIBA",
+        "latitude": "-25.4297",
+        "longitude": "-49.2719"
+    },
+    {
+        "cidade": "FLORIANOPOLIS",
+        "latitude": "-27.5933",
+        "longitude": "-48.5530"
+    },
+    {
+        "cidade": "FORTALEZA",
+        "latitude": "-3.7275",
+        "longitude": "-38.5275"
+    },
+    {
+        "cidade": "GOIANIA",
+        "latitude": "-16.6806",
+        "longitude": "-49.2564"
+    },
+    {
+        "cidade": "JOAO PESSOA",
+        "latitude": "-7.1200",
+        "longitude": "-34.8800"
+    },
+    {
+        "cidade": "MACAPA",
+        "latitude": "0.0330",
+        "longitude": "-51.0653"
+    },
+    {
+        "cidade": "MACEIO",
+        "latitude": "-9.6658",
+        "longitude": "-35.7350"
+    },
+    {
+        "cidade": "MANAUS",
+        "latitude": "-3.1189",
+        "longitude": "-60.0217"
+    },
+    {
+        "cidade": "NATAL",
+        "latitude": "-5.7950",
+        "longitude": "-35.2089"
+    },
+    {
+        "cidade": "PALMAS",
+        "latitude": "-10.1844",
+        "longitude": "-48.3336"
+    },
+    {
+        "cidade": "PORTO ALEGRE",
+        "latitude": "-30.0328",
+        "longitude": "-51.2300"
+    },
+    {
+        "cidade": "PORTO VELHO",
+        "latitude": "-8.7619",
+        "longitude": "-63.9039"
+    },
+    {
+        "cidade": "RECIFE",
+        "latitude": "-8.0539",
+        "longitude": "-34.8808"
+    },
+    {
+        "cidade": "RIO BRANCO",
+        "latitude": "-9.9747",
+        "longitude": "-67.8111"
+    },
+    {
+        "cidade": "RIO DE JANEIRO",
+        "latitude": "-22.9111",
+        "longitude": "-43.2056"
+    },
+    {
+        "cidade": "SALVADOR",
+        "latitude": "-12.9831",
+        "longitude": "-38.4928"
+    },
+    {
+        "cidade": "SAO LUIS",
+        "latitude": "-2.5300",
+        "longitude": "-44.3028"
+    },
+    {
+        "cidade": "SAO PAULO",
+        "latitude": "-23.5504",
+        "longitude": "-46.6339"
+    },
+    {
+        "cidade": "TERESINA",
+        "latitude": "-5.0903",
+        "longitude": "-42.8167"
+    },
+    {
+        "cidade": "VITORIA",
+        "latitude": "-20.3155",
+        "longitude": "-40.3128"
+    }
+]
