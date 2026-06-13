@@ -92,6 +92,8 @@ print("Working...")
 response = requests.get(url)
 dados_api = response.json()
 
+clear()
+
 temperatura = dados_api["current_weather"]["temperature"]
 clima = dados_api["current_weather"]["is_day"]
 if clima == 1:
