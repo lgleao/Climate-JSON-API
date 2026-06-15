@@ -96,12 +96,33 @@ clear()
 
 temperatura = dados_api["current_weather"]["temperature"]
 clima = dados_api["current_weather"]["is_day"]
-if clima == 1:
-    clima = "day"
+clima = dados_api["current_weather"]["weathercode"]
+
+#weathercode
+if clima == 0:
+    clima = "sunny"
+elif clima in [1,2,3]:
+    clima = "nublado"
+elif clima in [45,46,47,48]:
+    clima = "foggy"
+elif clima in [51,52,53,54,55]:
+    clima = "rainy"
+elif clima in [61,63,65,95,96,97,98,99]:
+    clima = "raining"
+elif clima in [71,72,73,74,75,80,81,82,85,86]:
+    clima = "snow"
+elif clima in [95,96,97,98,99]:
+    clima = "thundering"
+    
+#is_day
+if dia == 1:
+    dia = "day"
 else:
-    clima = "night"
-#Information output for the user
-print(
-    f"The current temperature in {cidade_encontrada["cidade"]} is {temperatura}°C\n"
-    f"At the moment, {cidade_encontrada["cidade"]} is {clima}.\n"
-    )
+    dia = "night"
+
+#Output de informações para o usuário
+print(f"{cidade_encontrada["cidade"]} é {temperatura}°C\n")
+print(f", {cidade_encontrada["cidade"]} está de {dia}, e está {clima}.")
+
+
+
