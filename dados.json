@@ -133,5 +133,645 @@
         "cidade": "VITORIA",
         "latitude": "-20.3155",
         "longitude": "-40.3128"
+    },
+    {
+        "cidade": "CRUZEIRO DO SUL",
+        "latitude": "-7.6304",
+        "longitude": "-72.6714"
+    },
+    {
+        "cidade": "ARAPIRACA",
+        "latitude": "-9.7525",
+        "longitude": "-36.6611"
+    },
+    {
+        "cidade": "SANTANA",
+        "latitude": "-0.0164",
+        "longitude": "-51.1817"
+    },
+    {
+        "cidade": "ITACOATIARA",
+        "latitude": "-3.1432",
+        "longitude": "-58.4439"
+    },
+    {
+        "cidade": "FEIRA DE SANTANA",
+        "latitude": "-12.2664",
+        "longitude": "-38.9664"
+    },
+    {
+        "cidade": "CAUCAIA",
+        "latitude": "-3.7319",
+        "longitude": "-38.6558"
+    },
+    {
+        "cidade": "VILA VELHA",
+        "latitude": "-20.3297",
+        "longitude": "-40.2925"
+    },
+    {
+        "cidade": "APARECIDA DE GOIANIA",
+        "latitude": "-16.8222",
+        "longitude": "-49.2453"
+    },
+    {
+        "cidade": "IMPERATRIZ",
+        "latitude": "-5.5264",
+        "longitude": "-47.4814"
+    },
+    {
+        "cidade": "VARZEA GRANDE",
+        "latitude": "-15.6508",
+        "longitude": "-56.1317"
+    },
+    {
+        "cidade": "DOURADOS",
+        "latitude": "-22.2239",
+        "longitude": "-54.8064"
+    },
+    {
+        "cidade": "UBERLANDIA",
+        "latitude": "-18.9186",
+        "longitude": "-48.2767"
+    },
+    {
+        "cidade": "ANANINDEUA",
+        "latitude": "-1.3653",
+        "longitude": "-48.3739"
+    },
+    {
+        "cidade": "CAMPINA GRANDE",
+        "latitude": "-7.2244",
+        "longitude": "-35.8814"
+    },
+    {
+        "cidade": "LONDRINA",
+        "latitude": "-23.3103",
+        "longitude": "-51.1628"
+    },
+    {
+        "cidade": "JABOATAO DOS GUARARAPES",
+        "latitude": "-8.1153",
+        "longitude": "-34.9197"
+    },
+    {
+        "cidade": "PARNAIBA",
+        "latitude": "-2.9164",
+        "longitude": "-41.7767"
+    },
+    {
+        "cidade": "SAO GONCALO",
+        "latitude": "-22.8269",
+        "longitude": "-43.0539"
+    },
+    {
+        "cidade": "MOSSORO",
+        "latitude": "-5.1883",
+        "longitude": "-37.3442"
+    },
+    {
+        "cidade": "CAXIAS DO SUL",
+        "latitude": "-29.1681",
+        "longitude": "-51.1794"
+    },
+    {
+        "cidade": "JI-PARANA",
+        "latitude": "-10.8831",
+        "longitude": "-61.9442"
+    },
+    {
+        "cidade": "RORAINOPOLIS",
+        "latitude": "0.9464",
+        "longitude": "-60.4131"
+    },
+    {
+        "cidade": "GUARULHOS",
+        "latitude": "-23.4628",
+        "longitude": "-46.5333"
+    },
+    {
+        "cidade": "NOSSA SENHORA DO SOCORRO",
+        "latitude": "-10.8561",
+        "longitude": "-37.1261"
+    },
+    {
+        "cidade": "ARAGUAINA",
+        "latitude": "-7.1914",
+        "longitude": "-48.2078"
+    },
+    {
+        "cidade": "MONTGOMERY",
+        "latitude": "32.3792",
+        "longitude": "-86.3077"
+    },
+    {
+        "cidade": "JUNEAU",
+        "latitude": "58.3019",
+        "longitude": "-134.4197"
+    },
+    {
+        "cidade": "PHOENIX",
+        "latitude": "33.4484",
+        "longitude": "-112.0740"
+    },
+    {
+        "cidade": "LITTLE ROCK",
+        "latitude": "34.7465",
+        "longitude": "-92.2896"
+    },
+    {
+        "cidade": "SACRAMENTO",
+        "latitude": "38.5816",
+        "longitude": "-121.4944"
+    },
+    {
+        "cidade": "DENVER",
+        "latitude": "39.7392",
+        "longitude": "-104.9903"
+    },
+    {
+        "cidade": "HARTFORD",
+        "latitude": "41.7637",
+        "longitude": "-72.6851"
+    },
+    {
+        "cidade": "DOVER",
+        "latitude": "39.1582",
+        "longitude": "-75.5244"
+    },
+    {
+        "cidade": "TALLAHASSEE",
+        "latitude": "30.4383",
+        "longitude": "-84.2807"
+    },
+    {
+        "cidade": "ATLANTA",
+        "latitude": "33.7490",
+        "longitude": "-84.3880"
+    },
+    {
+        "cidade": "HONOLULU",
+        "latitude": "21.3069",
+        "longitude": "-157.8583"
+    },
+    {
+        "cidade": "BOISE",
+        "latitude": "43.6150",
+        "longitude": "-116.2023"
+    },
+    {
+        "cidade": "SPRINGFIELD",
+        "latitude": "39.7817",
+        "longitude": "-89.6501"
+    },
+    {
+        "cidade": "INDIANAPOLIS",
+        "latitude": "39.7684",
+        "longitude": "-86.1581"
+    },
+    {
+        "cidade": "DES MOINES",
+        "latitude": "41.5868",
+        "longitude": "-93.6250"
+    },
+    {
+        "cidade": "TOPEKA",
+        "latitude": "39.0473",
+        "longitude": "-95.6752"
+    },
+    {
+        "cidade": "FRANKFORT",
+        "latitude": "38.2009",
+        "longitude": "-84.8733"
+    },
+    {
+        "cidade": "BATON ROUGE",
+        "latitude": "30.4515",
+        "longitude": "-91.1871"
+    },
+    {
+        "cidade": "AUGUSTA",
+        "latitude": "44.3106",
+        "longitude": "-69.7795"
+    },
+    {
+        "cidade": "ANNAPOLIS",
+        "latitude": "38.9784",
+        "longitude": "-76.4922"
+    },
+    {
+        "cidade": "BOSTON",
+        "latitude": "42.3601",
+        "longitude": "-71.0589"
+    },
+    {
+        "cidade": "LANSING",
+        "latitude": "42.7325",
+        "longitude": "-84.5555"
+    },
+    {
+        "cidade": "SAINT PAUL",
+        "latitude": "44.9537",
+        "longitude": "-93.0900"
+    },
+    {
+        "cidade": "JACKSON",
+        "latitude": "32.2988",
+        "longitude": "-90.1848"
+    },
+    {
+        "cidade": "JEFFERSON CITY",
+        "latitude": "38.5767",
+        "longitude": "-92.1735"
+    },
+    {
+        "cidade": "HELENA",
+        "latitude": "46.5891",
+        "longitude": "-112.0391"
+    },
+    {
+        "cidade": "LINCOLN",
+        "latitude": "40.8258",
+        "longitude": "-96.6852"
+    },
+    {
+        "cidade": "CARSON CITY",
+        "latitude": "39.1638",
+        "longitude": "-119.7674"
+    },
+    {
+        "cidade": "CONCORD",
+        "latitude": "43.2081",
+        "longitude": "-71.5375"
+    },
+    {
+        "cidade": "TRENTON",
+        "latitude": "40.2171",
+        "longitude": "-74.7429"
+    },
+    {
+        "cidade": "SANTA FE",
+        "latitude": "35.6870",
+        "longitude": "-105.9378"
+    },
+    {
+        "cidade": "ALBANY",
+        "latitude": "42.6526",
+        "longitude": "-73.7562"
+    },
+    {
+        "cidade": "RALEIGH",
+        "latitude": "35.7796",
+        "longitude": "-78.6382"
+    },
+    {
+        "cidade": "BISMARCK",
+        "latitude": "46.8083",
+        "longitude": "-100.7837"
+    },
+    {
+        "cidade": "COLUMBUS",
+        "latitude": "39.9612",
+        "longitude": "-82.9988"
+    },
+    {
+        "cidade": "OKLAHOMA CITY",
+        "latitude": "35.4676",
+        "longitude": "-97.5164"
+    },
+    {
+        "cidade": "SALEM",
+        "latitude": "44.9429",
+        "longitude": "-123.0351"
+    },
+    {
+        "cidade": "HARRISBURG",
+        "latitude": "40.2732",
+        "longitude": "-76.8867"
+    },
+    {
+        "cidade": "PROVIDENCE",
+        "latitude": "41.8240",
+        "longitude": "-71.4128"
+    },
+    {
+        "cidade": "COLUMBIA",
+        "latitude": "34.0007",
+        "longitude": "-81.0348"
+    },
+    {
+        "cidade": "PIERRE",
+        "latitude": "44.3683",
+        "longitude": "-100.3510"
+    },
+    {
+        "cidade": "NASHVILLE",
+        "latitude": "36.1627",
+        "longitude": "-86.7816"
+    },
+    {
+        "cidade": "AUSTIN",
+        "latitude": "30.2672",
+        "longitude": "-97.7431"
+    },
+    {
+        "cidade": "SALT LAKE CITY",
+        "latitude": "40.7608",
+        "longitude": "-111.8910"
+    },
+    {
+        "cidade": "MONTPELIER",
+        "latitude": "44.2601",
+        "longitude": "-72.5754"
+    },
+    {
+        "cidade": "RICHMOND",
+        "latitude": "37.5407",
+        "longitude": "-77.4360"
+    },
+    {
+        "cidade": "OLYMPIA",
+        "latitude": "47.0379",
+        "longitude": "-122.9007"
+    },
+    {
+        "cidade": "CHARLESTON",
+        "latitude": "38.3498",
+        "longitude": "-81.6326"
+    },
+    {
+        "cidade": "MADISON",
+        "latitude": "43.0731",
+        "longitude": "-89.4012"
+    },
+    {
+        "cidade": "CHEYENNE",
+        "latitude": "41.1400",
+        "longitude": "-104.8203"
+    },
+    {
+        "cidade": "TIRANA",
+        "latitude": "41.3275",
+        "longitude": "19.8189"
+    },
+    {
+        "cidade": "ANDORRA LA VELLA",
+        "latitude": "42.5063",
+        "longitude": "1.5218"
+    },
+    {
+        "cidade": "EREVAN",
+        "latitude": "40.1792",
+        "longitude": "44.4991"
+    },
+    {
+        "cidade": "VIENA",
+        "latitude": "48.2082",
+        "longitude": "16.3738"
+    },
+    {
+        "cidade": "BAKU",
+        "latitude": "40.4093",
+        "longitude": "49.8671"
+    },
+    {
+        "cidade": "MINSK",
+        "latitude": "53.9045",
+        "longitude": "27.5615"
+    },
+    {
+        "cidade": "BRUXELAS",
+        "latitude": "50.8503",
+        "longitude": "4.3517"
+    },
+    {
+        "cidade": "SARAJEVO",
+        "latitude": "43.8563",
+        "longitude": "18.4131"
+    },
+    {
+        "cidade": "SOFIA",
+        "latitude": "42.6977",
+        "longitude": "23.3219"
+    },
+    {
+        "cidade": "ZAGREB",
+        "latitude": "45.8150",
+        "longitude": "15.9819"
+    },
+    {
+        "cidade": "NICOSIA",
+        "latitude": "35.1856",
+        "longitude": "33.3823"
+    },
+    {
+        "cidade": "PRAGA",
+        "latitude": "50.0755",
+        "longitude": "14.4378"
+    },
+    {
+        "cidade": "COPENHAGUE",
+        "latitude": "55.6761",
+        "longitude": "12.5683"
+    },
+    {
+        "cidade": "TALIN",
+        "latitude": "59.4370",
+        "longitude": "24.7536"
+    },
+    {
+        "cidade": "HELSINQUE",
+        "latitude": "60.1699",
+        "longitude": "24.9384"
+    },
+    {
+        "cidade": "PARIS",
+        "latitude": "48.8566",
+        "longitude": "2.3522"
+    },
+    {
+        "cidade": "TBILISI",
+        "latitude": "41.7151",
+        "longitude": "44.8271"
+    },
+    {
+        "cidade": "BERLIM",
+        "latitude": "52.5200",
+        "longitude": "13.4050"
+    },
+    {
+        "cidade": "ATENAS",
+        "latitude": "37.9838",
+        "longitude": "23.7275"
+    },
+    {
+        "cidade": "BUDAPESTE",
+        "latitude": "47.4979",
+        "longitude": "19.0402"
+    },
+    {
+        "cidade": "REYKJAVIK",
+        "latitude": "64.1466",
+        "longitude": "-21.9426"
+    },
+    {
+        "cidade": "DUBLIN",
+        "latitude": "53.3498",
+        "longitude": "-6.2603"
+    },
+    {
+        "cidade": "ROMA",
+        "latitude": "41.9028",
+        "longitude": "12.4964"
+    },
+    {
+        "cidade": "PRISTINA",
+        "latitude": "42.6629",
+        "longitude": "21.1655"
+    },
+    {
+        "cidade": "RIGA",
+        "latitude": "56.9496",
+        "longitude": "24.1052"
+    },
+    {
+        "cidade": "VADUZ",
+        "latitude": "47.1410",
+        "longitude": "9.5209"
+    },
+    {
+        "cidade": "VILNIUS",
+        "latitude": "54.6872",
+        "longitude": "25.2797"
+    },
+    {
+        "cidade": "LUXEMBURGO",
+        "latitude": "49.6116",
+        "longitude": "6.1319"
+    },
+    {
+        "cidade": "VALETA",
+        "latitude": "35.8989",
+        "longitude": "14.5146"
+    },
+    {
+        "cidade": "CHISINAU",
+        "latitude": "47.0105",
+        "longitude": "28.8638"
+    },
+    {
+        "cidade": "MONACO",
+        "latitude": "43.7384",
+        "longitude": "7.4246"
+    },
+    {
+        "cidade": "PODGORICA",
+        "latitude": "42.4304",
+        "longitude": "19.2594"
+    },
+    {
+        "cidade": "AMSTERDA",
+        "latitude": "52.3676",
+        "longitude": "4.9041"
+    },
+    {
+        "cidade": "ESCOPIE",
+        "latitude": "41.9973",
+        "longitude": "21.4280"
+    },
+    {
+        "cidade": "OSLO",
+        "latitude": "59.9139",
+        "longitude": "10.7522"
+    },
+    {
+        "cidade": "VARSOVIA",
+        "latitude": "52.2297",
+        "longitude": "21.0122"
+    },
+    {
+        "cidade": "LISBOA",
+        "latitude": "38.7223",
+        "longitude": "-9.1393"
+    },
+    {
+        "cidade": "BUCARESTE",
+        "latitude": "44.4268",
+        "longitude": "26.1025"
+    },
+    {
+        "cidade": "MOSCOU",
+        "latitude": "55.7558",
+        "longitude": "37.6173"
+    },
+    {
+        "cidade": "SAN MARINO",
+        "latitude": "43.9424",
+        "longitude": "12.4578"
+    },
+    {
+        "cidade": "BELGRADO",
+        "latitude": "44.7866",
+        "longitude": "20.4489"
+    },
+    {
+        "cidade": "BRATISLAVA",
+        "latitude": "48.1486",
+        "longitude": "17.1077"
+    },
+    {
+        "cidade": "LIUBLIANA",
+        "latitude": "46.0569",
+        "longitude": "14.5058"
+    },
+    {
+        "cidade": "MADRI",
+        "latitude": "40.4168",
+        "longitude": "-3.7038"
+    },
+    {
+        "cidade": "ESTOCOLMO",
+        "latitude": "59.3293",
+        "longitude": "18.0686"
+    },
+    {
+        "cidade": "BERNA",
+        "latitude": "46.9480",
+        "longitude": "7.4474"
+    },
+    {
+        "cidade": "ANCARA",
+        "latitude": "39.9334",
+        "longitude": "32.8597"
+    },
+    {
+        "cidade": "KIEV",
+        "latitude": "50.4501",
+        "longitude": "30.5234"
+    },
+    {
+        "cidade": "LONDRES",
+        "latitude": "51.5074",
+        "longitude": "-0.1278"
+    },
+    {
+        "cidade": "VATICANO",
+        "latitude": "41.9029",
+        "longitude": "12.4534"
+    },
+    {
+        "cidade": "NOVA YORK",
+        "latitude": "40.7128",
+        "longitude": "-74.0060"
+    },
+    {
+        "cidade": "ZERMATT",
+        "latitude": "46.021208",
+        "longitude": "7.749254"
+    },
+    {
+        "cidade": "POLO SUL",
+        "latitude": "-90.0000",
+        "longitude": "0.0000"
     }
 ]
