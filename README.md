@@ -24,7 +24,9 @@ pip install requests
 
   2. Make sure you run the script from its root folder.
 
-  3. Run the script in your terminal:
+  3. Make sure you have the necessary libs. (requests, pandas, matplotlib)
+
+  4. Run the script in your terminal:
     python main.py
 
 ## 🚧 Future Improvements / To-Do
