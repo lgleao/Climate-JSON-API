@@ -26,7 +26,71 @@ def busca(city, dados):
         if(dados[i]['cidade'] == city):
             return i
     return -1
-    
+
+def main():
+    #Search coordinates on the JSON file
+    cidade_encontrada = None
+    pull_city = input("Which city? ").upper()
+    index = busca(pull_city, dados)
+    if (index > -1):
+        cid = dados[index]
+        print(cid["cidade"])
+        print(cid["longitude"])
+        print(cid["latitude"])
+
+    for cidade in dados:
+        if cidade["cidade"] == pull_city:
+            cidade_encontrada = cidade
+            latitude = cidade_encontrada["latitude"]
+            longitude = cidade_encontrada["longitude"]
+            break
+
+    if cidade_encontrada is None:
+        print("City not found. Please register it.")
+        exit()
+        
+    #API connection
+    url = (f"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&current_weather=true")
+
+    clear()
+
+    print("Working...")
+
+    response = requests.get(url)
+    dados_api = response.json()
+
+    clear()
+
+    temperatura = dados_api["current_weather"]["temperature"]
+    dia = dados_api["current_weather"]["is_day"]
+    clima = dados_api["current_weather"]["weathercode"]
+
+    #weathercode
+    if clima == 0 or 1:
+        clima = "sunny"
+    elif clima in [2,3]:
+        clima = "nublado"
+    elif clima in [45,46,47,48]:
+        clima = "foggy"
+    elif clima in [51,52,53,54,55]:
+        clima = "rainy"
+    elif clima in [61,63,65,95,96,97,98,99]:
+        clima = "raining"
+    elif clima in [71,72,73,74,75,80,81,82,85,86]:
+        clima = "snow"
+    elif clima in [95,96,97,98,99]:
+        clima = "thundering"
+        
+    #is_day
+    if dia == 1:
+        dia = "day"
+    else:
+        dia = "night"
+
+    #Output de informações para o usuário
+    print(f"The temperature in {cidade_encontrada["cidade"]} is {temperatura}°C")
+    print(f"{cidade_encontrada["cidade"]} is {dia}, and is {clima}.")
+
 def buscar_coordenadas(nome_cidade):
     #Search lat, long and timezone from every city
     url_geo = f"https://geocoding-api.open-meteo.com/v1/search?name={nome_cidade}&count=1&language=pt&format=json"
@@ -117,6 +181,10 @@ def exibir_grafico_historico():
         sleep(2)
         clear()
 
+file = Path("dados.json")
+if file.exists() == False:
+    os.System("touch dados.json)
+
 clear()
 
 try:
@@ -132,7 +200,14 @@ while True:
     #"Run the program"
     if escolha == "1":
         clear()
-        break
+        main()
+        sair = input("Press enter to leave. ")
+        if sair == "":
+            clear()
+            continue
+        else:
+            clear()
+            continue
     #"Register new location"
     elif escolha == "2":
         cidade = input("Type the city name: ").upper()
@@ -158,74 +233,8 @@ while True:
         clear()
         exibir_grafico_historico()
     elif escolha == "4":
-        print("Saindo do programa...")
+        print("Leaving...")
         exit()
     else:
-        print("Invalid.")
+        clear()
         continue
-
-#Search coordinates on the JSON file
-cidade_encontrada = None
-pull_city = input("Which city? ").upper()
-index = busca(pull_city, dados)
-if (index > -1):
-    cid = dados[index]
-    print(cid["cidade"])
-    print(cid["longitude"])
-    print(cid["latitude"])
-
-for cidade in dados:
-    if cidade["cidade"] == pull_city:
-        cidade_encontrada = cidade
-        latitude = cidade_encontrada["latitude"]
-        longitude = cidade_encontrada["longitude"]
-        break
-
-if cidade_encontrada is None:
-    print("City not found. Please register it.")
-    exit()
-    
-#API connection
-url = (f"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&current_weather=true")
-
-clear()
-
-print("Working...")
-
-response = requests.get(url)
-dados_api = response.json()
-
-clear()
-
-temperatura = dados_api["current_weather"]["temperature"]
-dia = dados_api["current_weather"]["is_day"]
-clima = dados_api["current_weather"]["weathercode"]
-
-#weathercode
-if clima == 0 or 1:
-    clima = "sunny"
-elif clima in [2,3]:
-    clima = "nublado"
-elif clima in [45,46,47,48]:
-    clima = "foggy"
-elif clima in [51,52,53,54,55]:
-    clima = "rainy"
-elif clima in [61,63,65,95,96,97,98,99]:
-    clima = "raining"
-elif clima in [71,72,73,74,75,80,81,82,85,86]:
-    clima = "snow"
-elif clima in [95,96,97,98,99]:
-    clima = "thundering"
-    
-#is_day
-if dia == 1:
-    dia = "day"
-else:
-    dia = "night"
-
-#Output de informações para o usuário
-print(f"{cidade_encontrada["cidade"]} é {temperatura}°C\n")
-print(f", {cidade_encontrada["cidade"]} está de {dia}, e está {clima}.")
-
-
-
