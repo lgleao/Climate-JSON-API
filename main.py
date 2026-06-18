@@ -1,10 +1,17 @@
 import requests
 import os
 import json
+from pathlib import Path
+import pandas as pd
+import matplotlib.pyplot as plt
+import calendar
+from time import sleep
 
 def options():
     print("1. Run the program\n"
-          "2. Register new city\n")
+          "2. Register new city\n"
+          "3. Temperature graphic\n"
+          "4. Sair\n")
     
 
 def clear():
@@ -19,6 +26,96 @@ def busca(city, dados):
         if(dados[i]['cidade'] == city):
             return i
     return -1
+    
+def buscar_coordenadas(nome_cidade):
+    #Search lat, long and timezone from every city
+    url_geo = f"https://geocoding-api.open-meteo.com/v1/search?name={nome_cidade}&count=1&language=pt&format=json"
+    resposta = requests.get(url_geo).json()
+    
+    if "results" in resposta:
+        cidade = resposta["results"][0]
+        return {
+            "lat": cidade["latitude"],
+            "lon": cidade["longitude"],
+            "nome": f"{cidade['name']}, {cidade.get('admin1', '')} - {cidade.get('country', '')}",
+            "timezone": cidade["timezone"]
+        }
+    return None
+
+def exibir_grafico_historico():
+    print("=== CLIMATE HISTORIC CONSULT ===")
+    cidade_input = input("Type the city name: (Ex: New York): ")
+
+    localizacao = buscar_coordenadas(cidade_input)
+
+    if not localizacao:
+        print("City not found. Try again.")
+        return # Interrompe a função e volta pro menu
+
+    print(f"Found: {localizacao['nome']}")
+    
+    try:
+        ano = int(input("Type the year (Ex: 2025): "))
+        mes = int(input("Type a month (Ex: 1 for january, 12 for december): "))
+        
+        ultimo_dia = calendar.monthrange(ano, mes)[1]
+        
+        start_date = f"{ano}-{mes:02d}-01"
+        end_date = f"{ano}-{mes:02d}-{ultimo_dia}"
+        
+    except ValueError:
+        print("Error: Please, try using valid numbers only.")
+        return
+
+    url_historico = "https://archive-api.open-meteo.com/v1/archive"
+    params = {
+        "latitude": localizacao["lat"],
+        "longitude": localizacao["lon"],
+        "start_date": start_date,
+        "end_date": end_date,
+        "daily": "temperature_2m_max,temperature_2m_min",
+        "timezone": localizacao["timezone"]
+    }
+
+    print(f"\nSearching data beetween {start_date} and {end_date}...")
+    
+    try:
+        resposta = requests.get(url_historico, params=params)
+        resposta.raise_for_status()
+        dados = resposta.json()
+        
+        df = pd.DataFrame({
+            "Data": dados["daily"]["time"],
+            "Máxima": dados["daily"]["temperature_2m_max"],
+            "Mínima": dados["daily"]["temperature_2m_min"]
+        })
+        
+        print("\n--- DATA ---")
+        print(df.to_string(index=False))
+        
+        # --- PLOTAGEM DO GRÁFICO ---
+        plt.figure(figsize=(12, 6))
+        plt.plot(df['Data'], df['Máxima'], label='Temp Máxima (°C)', color='darkorange', marker='o')
+        plt.plot(df['Data'], df['Mínima'], label='Temp Mínima (°C)', color='teal', marker='o')
+        
+        plt.title(f'Histórico de Temperaturas - {localizacao["nome"]} ({mes:02d}/{ano})')
+        plt.xlabel('Dias do Mês')
+        plt.ylabel('Temperatura (°C)')
+        
+        plt.xticks(rotation=45)
+        plt.grid(True, linestyle='--', alpha=0.5)
+        plt.legend()
+        plt.tight_layout()
+        
+        print("\n Opening graphic...")
+        sleep(2)
+        clear()
+        plt.show()
+        
+    except requests.exceptions.RequestException as e:
+        print(f"Error: could not find historical climate.")
+        sleep(2)
+        clear()
 
 clear()
 
@@ -57,6 +154,12 @@ while True:
         with open("dados.json", "w", encoding= "utf-8") as arquivo:
             json.dump(dados,arquivo,indent=4, ensure_ascii=False, sort_keys=False)
         clear()
+    elif escolha == "3":
+        clear()
+        exibir_grafico_historico()
+    elif escolha == "4":
+        print("Saindo do programa...")
+        exit()
     else:
         print("Invalid.")
         continue
@@ -95,13 +198,13 @@ dados_api = response.json()
 clear()
 
 temperatura = dados_api["current_weather"]["temperature"]
-clima = dados_api["current_weather"]["is_day"]
+dia = dados_api["current_weather"]["is_day"]
 clima = dados_api["current_weather"]["weathercode"]
 
 #weathercode
-if clima == 0:
+if clima == 0 or 1:
     clima = "sunny"
-elif clima in [1,2,3]:
+elif clima in [2,3]:
     clima = "nublado"
 elif clima in [45,46,47,48]:
     clima = "foggy"
